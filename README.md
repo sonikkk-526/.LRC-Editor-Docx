@@ -27,3 +27,6 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## ■ License & Copyright
+[Copyright (c) sonikkk-526](LICENSE) (known as sonik.- and FlashSonic526).
