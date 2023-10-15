@@ -1,0 +1,62 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); */
+
+.content-container *:not(h1, b, i, code, q) {
+  font-family: Verdana, Verdana, Geneva, Tahoma, sans-serif;
+  color: #3a3a3a;
+}
+
+.content-container {
+  text-wrap: wrap;
+}
+
+.badges {
+  padding-left: 9em;
+}
+
+.block-container {
+  display: flex;
+}
+
+.block-container blockquote {
+  padding: 0 10% 0 5px;
+  min-width: 330px;
+}
+
+#showcase {
+  width: 90%;
+  padding-left: 10px;
+}
+
+#english-content {
+  line-height: 1.4;
+}
+
+h1 {
+  border-bottom: 2px solid rgba(16, 16, 16, 0.1);
+  display: inline-block;
+  padding: 25px 5% 4px 10px;
+  margin: 0 0 13px 0;
+}
+
+blockquote p {
+  padding: 15px;
+  background: #e8e8e8;
+  border-radius: 5px;
+  display: list-item;
+  list-style-position: outside;
+  max-width: 91.5%;
+}
+
+code {
+  background: #e8e8e8;
+  border-radius: 5px;
+}
+
+q {
+  line-height: 1.6;
+}
+
+li {
+  line-height: 1.6;
+  list-style-type: square;
+}

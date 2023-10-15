@@ -1,0 +1,21 @@
+1. @exit small menu on click (https://www.youtube.com/watch?v=KRO-zM7_vb4&t=183s&ab_channel=cdruc)
+
+2. small menu overlapped ✅
+
+3. consider using v-model or v-bind for images
+
+4. scoped import css also affected FAQ pages
+    - after loading featureview, then it affects global css
+
+5. small menu needs more left location, as margin is setted to zero ✅
+
+<------------------------------------>
+download: 
+ok. this is the most important thing I would like to bring up, but due to the limitation of the markdown file I used before, its hard to achieve.
+
+for current version, I will only post a video about how to either
+ (1) download from web and;
+ (2) download from youtube.
+
+_in future update_, I will implement download from youtube feature
+(last time I checked does not appear to violate any copyright issue as long as I am only offering a download caption service only).

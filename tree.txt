@@ -1,0 +1,32 @@
+App (root component)
+├─ NavBar
+└─ RouterView
+   ├─ HomeView
+   ├─ FeaturesView
+      ├─ Getting Start Page (1)
+      ├─ Lyrics Editor Page (2)
+         └─ * sub pages *
+      ├─ Lyrics Trimming Page (3)
+         └─ * sub pages *
+      ├─ Creating your .LRC Page (4)
+         └─ * sub pages *
+      └─ Side Note Page (5)
+   └─ FAQView
+* END HERE *
+
+
+Lyrics Editor Page (2)
+├─ Merging Features
+   └─ Options for Merging
+├─ Timestamp Editing
+└─ Auto-gen Headers
+   └─ Generate Empty Headers
+* END HERE *
+
+
+
+Lyrics Trimming Page (3)
+├─ Feature Showcase
+└─ Trimming Options
+   └─ Inverse Selection
+* END HERE *
