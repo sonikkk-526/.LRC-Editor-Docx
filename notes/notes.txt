@@ -1,0 +1,40 @@
+<----------------Work----------------->
+To-fix list:
+1. scoped import css also affected FAQ pages 
+    - after loading featureview, then it affects global css
+
+2a. Close label child baseed on latest children state*
+
+2b. Split label and dropdown into two buttons
+    - such that the page could change while not having the child state change.
+
+3. content-container could reference blog style, center.
+    - padding left and right, while setting the min-width.
+
+4. Dark mode if possible
+
+To-do list:
+1. index page should breif #about this program, #install and uninstall instructions, #licensing.
+    - feature/gettingstart should remove badges.
+
+*2. "Lyrics Editor feature page" content should belong to index.
+
+<-----------------Page Descriptionn Notes---------------->
+download page notes:
+ok. this is the most important thing I would like to bring up, but due to the limitation of the markdown file I used before, its hard to achieve.
+
+create LRC methods:
+ (1) download from web (ie. lyricsify, megalobiz, lrc-database)
+ (2) download from youtube.
+
+_in future update_, I will implement download from youtube feature
+(last time I checked does not appear to violate any copyright issue as long as I am only offering a download caption service only).
+
+need to reach out to more people about this program
+
+<----------------Completed----------------->
+1. small menu overlapped ✅
+
+2. consider using v-model or v-bind for images ✅
+
+3. small menu needs more left location, as margin is setted to zero ✅
