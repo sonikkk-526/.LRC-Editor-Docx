@@ -33,7 +33,7 @@
   </div>
   <i>It is a handy option if you found a LRC file and only need the lyrics portion.</i><br><br>
 
-  <p><u>2.</u> "Discard Lyrics": Removing all the lyrics such that it only contains the timestamp-</p>
+  <p><u>2.</u> "Discard Lyrics": Removing all the lyrics such that it only contains the timestamp (most convenient option imo)-</p>
   <div class="block-container">
     <div>
       <span>Input:</span>
@@ -64,16 +64,14 @@
     </div>
   </div>
   <i>
-    This is the most convenient option imo because occasionally you may have a LRC file and 
-    would want to change the lyrics out for another language (ie. japanese -> english).<br><br>
+    Occasionally you may have a .LRC file and would want to change the lyrics out for another language
+    (ie. japanese -> english).<br><br>
 
     Rather than doing it by hand for 30+ lines, the <code>x</code> represents there was a line of lyrics
-    there (because sometimes LRC file may use empty lines to separate the structure:
+    there (because sometimes .LRC file may use empty lines to separate the structure:
     (ie. intro, verse, pre-chorus, chorus, bridge, inter, instrumental solo, outro)).<br><br>
 
     With this in mind, we could utilize this feature and combine it with
     "<RouterLink :to="{name: 'editor-merging'}">Lyrics Merging</RouterLink>".<br>
-    Tips: You can use "<RouterLink :to="{name: 'editor-mergeOptions'}">Use Trimmed Lyrics Option</RouterLink>"
-    such that you do not need to copy and paste it into the merging page.
   </i>
 </template>

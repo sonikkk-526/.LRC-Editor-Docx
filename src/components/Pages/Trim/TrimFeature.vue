@@ -2,7 +2,7 @@
   <h1>Intro to Lyrics Trimming Feature Pack</h1>
   <p>
     There may be times that you found a translated lyrics or file (.SRT/.LRC) online which contains
-    more than one langauges. In that case, you may want to keep only one langauge to work with:
+    more than one languages. In that case, you may want to keep only one language to work with:
   </p>
   
   <div class="block-container">
@@ -44,7 +44,7 @@
     You will need to read the "<RouterLink :to="{name: 'trimShowcase'}">The nitty-gritty</RouterLink>" to understand how to achieve it.
     It would be too long for a page to have both the description and the implementation of this feature.<br><br>
     
-    <b>FYI.</b> Although using services like Google Translate would be much more practical, these service would also cause me moeny to maintain
+    <b>FYI.</b> Although using services like Google Translate would be much more practical, these service would also cause me money to maintain
     (they have limited free usage); as most translated lyrics has a consistent pattern (described in the next page), a simple line skipping feature
     seems to do the job.
   </p>
