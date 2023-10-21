@@ -5,14 +5,14 @@
 	<p>Current Lyrics Editor feature are listed below (s/b continue to update :D)</p>
 
 	<ol>
-		<li>Merging Function: Replace the lyrics inside your .LRC file, while maintaining the original timestamp. Can be achieved by:</li>
-    <ul>
+		<li>"Merging Function": Replace the lyrics inside your .LRC file, while maintaining the original timestamp. Can be achieved by:</li>
+    <ol type="a">
 			<li>Putting your lyrics replacement into merging page</li>
 			<li>Using the trimmed lyrics for lyrics replacement (for trimmed lyrics feature, refer to Lyrics Trimming page for details)</li>
-		</ul>
+		</ol>
 		
-    <li>Timestamp Edit: Mass edit each line of timestamp by ± a fixed centiseconds (1 second = 100 centiseconds).</li>
-		<li>Generation of header tags: Generate a header tag for easy `.LRC` file management (see below):</li>
+    <li>"Timestamp Edit": Mass edit each line of timestamp by ± a fixed centiseconds (1 second = 100 centiseconds).</li>
+		<li>"Generation of header tags": Generate a header tag for easy `.LRC` file management (see below):</li>
     <ul>
 			<li>Tags are described as here: <code>title tag [ti]</code>, <code>artist [ar]</code>, <code>album [al]</code>, <code>song duration [length]</code></li>
 		</ul>

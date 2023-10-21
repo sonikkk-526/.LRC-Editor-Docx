@@ -2,16 +2,15 @@
   <h1 id="merging-tab">Understanding the Merging Feature</h1>
   <p>Sometimes when you found some .LRC files online, it may not appear to be in your language of desire.</p>
   <p>
-    It also sucks when you have to swap out EACH line of lyrics by hand (typical solution).
-    There are also times where you almost complete swapping out all the lyrics, just to find out that either:
+    Instead of replacing EACH line of lyrics by hand (typical solution), and just to find out that either:
     <ul>
-      <li>lyrics (translated or not) may split/combine sentences, resulting in too less/much lyrics for you to replace.</li>
+      <li>replacing lyrics may split/combine sentences; resulting in too less/much lyrics for you to replace.</li>
       <li>
-        have to watch out for empty timestamp, which its idea was for "spliting" paragraphs in a song<br>
+        have to watch out for empty lines, which its idea was to split paragraphs (in .LRC files) in a song<br>
         <i>(ie. intro, verse, pre-chorus, chorus, bridge, inter, instrumental solo, outro).</i>
       </li>
     </ul>
-    <q>Conclusion: The goal of this feature is to easily replace the all the lyrics inside your .LRC file, while maintaining the original timestamp.</q>
+    <i>The goal of this feature is to easily replace the all the lyrics inside your .LRC file, while maintaining the original timestamp.</i>
   </p>
 
   <!--Second divider-->
@@ -22,7 +21,7 @@
 
   <div class="block-container">
     <div>
-      <p style="padding-left: 20px">Original lyrics example below:</p>
+      <span>Original lyrics example below:</span>
       <blockquote>
         <p>
           [00:06.94]描いた地図は引き裂いた<br>
@@ -36,7 +35,7 @@
     </div>
 
     <div>
-      <p style="padding-left: 20px">Replacement lyrics example:</p>
+      <span>Replacement lyrics example:</span>
       <blockquote id="english-content">
         <p>
           The drawn atlas has been torn apart<br>
@@ -51,7 +50,7 @@
   </div>
 
   <div>
-    <p style="padding-left: 20px">Results:</p>
+    <p style="padding-left: 5px">Results:</p>
     <blockquote>
       <p>
         [00:06.94]The drawn atlas has been torn apart<br>

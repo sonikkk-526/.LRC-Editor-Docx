@@ -3,10 +3,7 @@
 <template>
   <div id="app">
     <NavBar />
-
-    <div class="content">
-      <RouterView />
-    </div>
+    <RouterView />
   </div>
 </template>
 

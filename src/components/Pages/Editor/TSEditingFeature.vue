@@ -23,7 +23,7 @@
 
   <div class="block-container">
     <div>
-      <p style="padding-left: 20px">Unmodified .LRC file:</p>
+      <span>Unmodified .LRC file:</span>
       <blockquote>
         <p>
           [00:06.94]The drawn atlas has been torn apart<br>
@@ -37,7 +37,7 @@
     </div>
 
     <div>
-      <p style="padding-left: 20px">Modified .LRC file:</p>
+      <span>Modified .LRC file:</span>
       <blockquote id="english-content">
         <p>
           [00:03.41]The drawn atlas has been torn apart<br>

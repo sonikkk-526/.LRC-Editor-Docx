@@ -1,35 +1,73 @@
 <template>
   <h1>Understanding the Lyrics Trimming Feature</h1>
   <p>
-    Now, using the same example shown in <RouterLink :to="{name: 'trimShowcase'}">Intro to Lyrics Trimming Feature Pack</RouterLink>, 
-    below demonstrate the nitty-gritty while using the feature, the concept of the feature is simple:
+    The following explains how the example in the <RouterLink :to="{name: 'Trim'}">Intro to Lyrics Trimming Feature Pack</RouterLink> works.
   </p>
 
+  <div class="block-container">
+    <div id="english-content">
+      <span>Using the same lyrics example:</span>
+      <blockquote>
+        <p>
+          時には誰かを [japanese]<br>
+          有時候我們 [chinese]<br>
+          to ki ni wa  da re ka wo [Romanji]<br>
+          知らず知らずのうちに [japanese]<br>
+          會在無意之間 [chinese]<br>
+          shi ra su shi ra su no  u chi ni [Romanji]<br>
+          傷つけてしまったり [japanese]<br>
+          傷害他人 [chinese]<br>
+          ki zu tsu ke te shi ma - ta ri [Romanji]
+        </p>
+      </blockquote>
+    </div>
+    <div id="english-content">
+      <span>The pattern we found:</span>
+      <blockquote>
+        <p>
+          [japanese]<br>
+          [chinese]<br>
+          [Romanji]<br>
+          [japanese]<br>
+          [chinese]<br>
+          [Romanji]<br>
+          [japanese]<br>
+          [chinese]<br>
+          [Romanji]
+        </p>
+      </blockquote>
+    </div>
+  </div>
+
+  <p>
+    It shows that the lyrics is formed by the pattern: <i>(1) japanese -> (2) chinese -> (3) romanji</i>.
+    Say we want only <u>Romanji</u>, and by using this pattern:
+  </p>
   <div>
-    <p style="font-weight: bold;">A translated lyrics you may found online (say we want to keep Romaji):</p>
     <blockquote>
       <p>
         <s>時には誰かを</s><br>
         <br>
-        <s>有时候我们</s><br>
+        <s>有時候我們</s><br>
         <br>
         to ki ni wa  da re ka wo<br>
         <br>
         <s>知らず知らずのうちに</s><br>
-        <s>会在无意之间</s><br>
+        <s>會在無意之間</s><br>
         shi ra su shi ra su no  u chi ni<br>
         <br>
         <s>傷つけてしまったり</s><br>
-        <s>伤害他人</s><br>
+        <s>傷害他人</s><br>
         ki zu tsu ke te shi ma - ta ri
       </p>
     </blockquote>
   </div>
-  <p><q>Note that empty line feeds are automatically ignored/discarded.</q></p>
-  <p><b>
-    Notice how there are two lines of lyrics to skip, before it reaches to the Romaji line.
-    Therefore, we would put '2' into the <code>Number of Occurrence</code>, as shown below:<br>
-  </b></p>
+  <b><q>Note that empty line feeds are automatically ignored/discarded.</q></b>
+
+  <p>
+    We also noticed that there are two lines ahead of each <u>Romanji</u> line lyrics,
+    therefore we want to skip <code>2</code> lines per each occurrence, such that it would only contain Romanji only:
+  </p>
   <img id="showcase" :src=img_01 />
 </template>
 

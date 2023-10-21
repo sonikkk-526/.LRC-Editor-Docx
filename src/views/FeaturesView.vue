@@ -1,8 +1,10 @@
 <template>
   <Menu @small-menu-state="(state) => this.smallMenu = state"/>
-
-  <div class="content-container" :class="{ 'small-menu': smallMenu }">
-    <RouterView />
+  
+  <div class="content" :class="{ 'small-menu': smallMenu }">
+    <div class="content-container">
+      <RouterView />
+    </div>
   </div>
 </template>
 
@@ -22,23 +24,19 @@ export default {
 <style scoped>
 @import "@/assets/styles/FeatureStyle.css";
 
-.content-container {
+.content {
   top: 90px;
-  left: 310px;
+  left: 330px;
   display: block;
   position: absolute;
-
-  /* 11" range perfect */
-  width: 72%;
-  min-width: 450px;
-  max-width: 80%;
-
-  overflow: auto;
+  max-width: 100%;
   z-index: 1;
-  /* overflow-x: hidden; */
   transition: all .3s ease;
   &.small-menu {
-    left: 100px;
+    left: 80px;
+    .content-container {
+      width: 90%;
+    }
   }
 }
 </style>

@@ -62,13 +62,9 @@ export default {
         icon: "cut",
         children: [
           {
-            label: "Feature Showcase",
+            label: "The nitty-gritty",
             route: "trimShowcase",
             children: [
-              {
-                label: "Filling the Gap",
-                route: "trimGap"
-              },
               {
                 label: "Inverse Selection Option",
                 route: "trimInverse"
@@ -124,9 +120,9 @@ export default {
   &.small-menu {
     overflow: inherit;
     width: 60px;
-    padding-top: 50px;
+    padding-top: 45px;
     &.small-menu i {
-      left: 22px;
+      left: 20px;
     }
   }
 }

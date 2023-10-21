@@ -1,40 +1,29 @@
 <template>
   <h1>Intro to Lyrics Trimming Feature Pack</h1>
   <p>
-    I understand that sometimes maybe you found a translated lyrics or .SRT/.LRC file online, 
-    which has more than one language in it. 
-    You would like to filter the other language out, so that you could keep the language you would like to work with.
-  </p>
-
-  <p>
-    This feature has the same concepts as other features, 
-    to massively filter out the other lines without going through the file line by line (only works with constant lines):
+    There may be times that you found a translated lyrics or file (.SRT/.LRC) online which contains
+    more than one langauges. In that case, you may want to keep only one langauge to work with:
   </p>
   
   <div class="block-container">
     <div>
-      <p style="padding-left: 15px; font-weight: bold;">A translated lyrics you may found online:</p>
+      <span>A translated lyrics you found online:</span>
       <blockquote>
         <p>
-          時には誰かを<br>
-          <br>
-          有时候我们<br>
-          <br>
-          to ki ni wa  da re ka wo<br>
-          <br>
-          知らず知らずのうちに<br>
-          会在无意之间<br>
-          shi ra su shi ra su no  u chi ni<br>
-          <br>
-          傷つけてしまったり<br>
-          伤害他人<br>
-          ki zu tsu ke te shi ma - ta ri
+          時には誰かを [japanese]<br><br>
+          有時候我們 [chinese]<br><br>
+          to ki ni wa  da re ka wo [Romanji]<br><br>
+          知らず知らずのうちに [japanese]<br>
+          會在無意之間 [chinese]<br>
+          shi ra su shi ra su no  u chi ni [Romanji]<br><br>
+          傷つけてしまったり [japanese]<br>
+          傷害他人 [chinese]<br>
+          ki zu tsu ke te shi ma - ta ri [Romanji]
         </p>
       </blockquote>
     </div>
-
     <div>
-      <p style="padding-left: 15px; font-weight: bold;">Leave out just Romanji (a kind of japanese):</p>
+      <span>Keep only Romanji (a kind of japanese):</span>
       <blockquote>
         <p id="english-content">
           to ki ni wa  da re ka wo<br>
@@ -45,15 +34,18 @@
     </div>
   </div>
   <p><q><i>Lyrics from Hakujitsu by King Gnu.</i></q></p>
-
   <p>
-    Again, in reality there are usually 60-80 lines.
-    Now imagine doing the above example by hand for another 60-80 times.
-    Then, for each multiple language translated lyrics, you would have to do this cycle again.
+    The goal of this "Lyrics Trimming" feature is simply for the above example. A translated lyrics
+    may contain 50+ lines, and it would be difficult to delete line by line manually.
   </p>
 
-  <p><b>FYI.</b> Since using services such as Google Translate API to detect langauge would cause me money to maintain.
-    Therefore, I decided to use a simple skipping certain number of lines concept, as I found that the majority of translated lyrics is 
-    quite consistent.
+  <h1>Side Note (you may skip this one)</h1>
+  <p>
+    You will need to read the "<RouterLink :to="{name: 'trimShowcase'}">The nitty-gritty</RouterLink>" to understand how to achieve it.
+    It would be too long for a page to have both the description and the implementation of this feature.<br><br>
+    
+    <b>FYI.</b> Although using services like Google Translate would be much more practical, these service would also cause me moeny to maintain
+    (they have limited free usage); as most translated lyrics has a consistent pattern (described in the next page), a simple line skipping feature
+    seems to do the job.
   </p>
 </template>

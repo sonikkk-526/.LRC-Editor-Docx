@@ -59,11 +59,6 @@ const routes = [
         component: () => import('../components/Pages/Trim/FeatureShowcase.vue')
       },
       {
-        path: 'trim/filling-gap',
-        name: 'trimGap',
-        component: () => import('../components/Pages/Trim/FillingGap.vue')
-      },
-      {
         path: 'trim/inverse-selection',
         name: 'trimInverse',
         component: () => import('../components/Pages/Trim/InverseOption.vue')

@@ -33,7 +33,7 @@
     <li><b>Users need to download runtime on their computer before using the .JAR application (at least for the current version).</b></li>
     <li><a href="https://github.com/sonikkk-526/Lyrics-Editor-for-.LRC/releases/tag/v1.2.0" target="_blank">Current version</a> can be found here!</li>
   </ul>
-  <img id="showcase" src="https://raw.githubusercontent.com/sonikkk-526/Lyrics-Editor-for-.LRC/main/editor_showcase.png">
+  <img id="showcase" src="https://raw.githubusercontent.com/sonikkk-526/Lyrics-Editor-for-.LRC/main/assets/editor_showcase.png">
   <p><i>
     As for MacOS, I am unsure whether it woud run even having Java environment setup. 
     Please use <a href="https://github.com/sonikkk-526/Lyrics-Editor-for-.LRC/discussions" target="_blank">GitHub Discussions</a> page for any questions.
