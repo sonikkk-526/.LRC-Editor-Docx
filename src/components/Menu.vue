@@ -26,7 +26,15 @@ export default {
       {
         label: "Getting Start",
         route: 'Start',
-        icon: "apps"
+        icon: "apps",
+        children: [
+          /* Create LRC Page */
+          {
+            label: "Creating your .LRC",
+            route: "createLRC",
+            icon: "file_download_done"
+          },
+        ]
       },
       /* Editor Page */
       {
@@ -74,17 +82,6 @@ export default {
           {
             label: "Other Options",
             route: "trimOptions"
-          }
-        ]
-      },
-      /* Create LRC Page */
-      {
-        label: "Creating your .LRC",
-        route: "createLRC",
-        icon: "file_download_done",
-        children: [
-          {
-            label: "Using captions"
           }
         ]
       },

@@ -41,7 +41,7 @@
 
   <h1>Side Note (you may skip this one)</h1>
   <p>
-    You will need to read the "<RouterLink :to="{name: 'trimShowcase'}">The nitty-gritty</RouterLink>" to understand how to achieve it.
+    You will need to read the "<RouterLink :to="{name: 'trimShowcase'}">The nitty-gritty</RouterLink>" to understand how it works.
     It would be too long for a page to have both the description and the implementation of this feature.<br><br>
     
     <b>FYI.</b> Although using services like Google Translate would be much more practical, these service would also cause me money to maintain

@@ -3,7 +3,7 @@
   <p>You can do the "<RouterLink :to="{name: 'editor-mergeOptions'}">Lyrics Merging</RouterLink>" in two ways:</p>
 
   <p><b><u>1.</u> Using the output from "<RouterLink :to="{name: 'Trim'}">Lyrics Trimming</RouterLink>" -</b></p>
-  <p>Simply check the "Use Trimmed Lyrics" checkbox, and have results in your Lyrics Trimming output pane.</p><br>
+  <p>Simply check the "Use Trimmed Lyrics" checkbox, <u>and have results in your Lyrics Trimming output pane</u>.</p><br>
 
   <p><b><u>2.</u> Paste your replacement lyrics into the <code>Merging Page</code> -</b></p>
   <ol type="a">

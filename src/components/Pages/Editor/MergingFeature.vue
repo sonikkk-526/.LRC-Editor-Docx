@@ -3,13 +3,13 @@
   <p>Sometimes when you found some .LRC files online, it may not appear to be in your language of desire.</p>
   <p>
     Instead of replacing EACH line of lyrics by hand (typical solution), and just to find out that either:
-    <ul>
+    <ol type="a">
       <li>replacing lyrics may split/combine sentences; resulting in too less/much lyrics for you to replace.</li>
       <li>
-        have to watch out for empty lines, which its idea was to split paragraphs (in .LRC files) in a song<br>
+        have to watch out for empty lines (split paragraphs (in .LRC files) in a song)<br>
         <i>(ie. intro, verse, pre-chorus, chorus, bridge, inter, instrumental solo, outro).</i>
       </li>
-    </ul>
+    </ol>
     <i>The goal of this feature is to easily replace the all the lyrics inside your .LRC file, while maintaining the original timestamp.</i>
   </p>
 
