@@ -12,8 +12,9 @@
       <li>Download YouTube video captions > https://downsub.com/ <br></li>
       <li>Convert .SRT to .LRC > https://toolslick.com/conversion/subtitle/srt-to-lrc</li>
     </ul>
+    <b>Remember to turn on the caption while watching the "how-to" video below~!</b>
   </p>
-  <div style="padding-left: 1.4em;">
+  <div>
     <iframe frameborder="0" allowfullscreen src="https://youtube.com/embed/3sg3WkMJefw"/>
   </div>
   <br>

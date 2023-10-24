@@ -44,7 +44,7 @@
     You will need to read the "<RouterLink :to="{name: 'trimShowcase'}">The nitty-gritty</RouterLink>" to understand how it works.
     It would be too long for a page to have both the description and the implementation of this feature.<br><br>
     
-    <b>FYI.</b> Although using services like Google Translate would be much more practical, these service would also cause me money to maintain
+    <b>FYI.</b> Although using services like Google Translate would be much more practical, these service would also cost me money to maintain
     (they have limited free usage); as most translated lyrics has a consistent pattern (described in the next page), a simple line skipping feature
     seems to do the job.
   </p>

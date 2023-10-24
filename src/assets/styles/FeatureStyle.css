@@ -13,10 +13,6 @@
   transition: all .3s ease;
 }
 
-.badges {
-  padding-left: 9em;
-}
-
 .block-container {
   display: flex;
 }

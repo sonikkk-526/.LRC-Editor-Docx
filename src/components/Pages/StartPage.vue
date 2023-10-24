@@ -3,6 +3,7 @@
   <!--Main feature divider-->
   <h1 id="content-start">Getting Start Here!</h1>
   <p>This is an open-sourced project that allows the user to easily modify and manage their .LRC (lyrics) files~!</p>
+  
   <div class="badges">
     <a href="https://github.com/sonikkk-526">
       <img alt="Author" src="https://img.shields.io/badge/Author-FlashSonic526-brightgreen?style=for-the-badge">
@@ -46,3 +47,12 @@
     <a href="https://github.com/sonikkk-526/Lyrics-Editor-for-.LRC/blob/main/LICENSE" target="_blank">Copyright (c) sonik.- (known as FlashSonic526, sonikkk, and sonikkk526)</a>
   </p>
 </template>
+
+<style scoped>
+.badges {
+  text-align: center;
+  > a {
+    padding-right: 18px;
+  }
+}
+</style>

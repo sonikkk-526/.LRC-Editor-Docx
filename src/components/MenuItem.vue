@@ -123,9 +123,9 @@ export default {
   box-sizing: border-box;
   transition: all 0.3s ease;
   > div {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
   &.small-item {
     width: fit-content;

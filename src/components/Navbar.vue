@@ -2,7 +2,7 @@
 <template>
   <header>
     <div class="inner">
-      <div class="logo">
+      <div class="label">
         <RouterLink to="/">
           <!-- The below line can be an image or a h1, either will work -->
           <img src="../assets/img/editor_icon.png" alt="Lyrics Editor for .LRC Logo">
@@ -11,23 +11,16 @@
       </div>
 
       <nav>
-        <!-- Markup shown as below
-        <li> tag will be the container for the table.
-        <span> will be the part that centers the content inside it
-        <a> is the actual clickable part -->
-        <li><span><RouterLink :to="{path: `/feature/start`}">Features</RouterLink></span></li>
-        <li><span><RouterLink :to="{path: `/faq`}">FAQ</RouterLink></span></li>
-        <li><span>
-          <a
-            href="https://github.com/sonikkk-526/Lyrics-Editor-for-.LRC"
-            target="_blank"
-            class="button"
-          >
-          Join me on GitHub!<img src ="../assets/img/github-mark-white.png" id="github">
-          </a>
-        </span></li>
-        
+        <span><RouterLink :to="{path: `/feature/start`}">Features</RouterLink></span>
+        <span><RouterLink :to="{path: `/faq`}">FAQ</RouterLink></span>
+        <a href="https://github.com/sonikkk-526/Lyrics-Editor-for-.LRC" target="_blank">
+          <div class="button">
+            <p>Join me on GitHub!</p>
+            <img src ="../assets/img/github-mark-white.png">
+          </div>
+        </a>
       </nav>
+      
     </div>
   </header>
 </template>
@@ -39,10 +32,8 @@ export default {
 </script>
 
 <style scoped>
-/* Default styles for the browser */
 * {
   margin-top: 5px;
-  list-style: none;
   color: #101010;
   text-decoration: none;
 }
@@ -50,70 +41,62 @@ export default {
 header {
   height: 95px;
   border-bottom: 1px solid #ececec;
+  > .inner {
+    width: 75%; /* This is the inner width of the content inside of your header (80%, etc) */
+    min-width: 680px;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
-.inner {
-  width: 75%; /* This is the inner width of the content inside of your header (80%, etc) */
-  min-width: 680px;
-  height: 100%;
-  display: block;
-  margin: 0 auto;
-}
-
-.logo {
+.inner .label {
   display: inline-block;
+  & img {
+    float: left;
+    height: 50px;
+    margin-top: 15px; /* Optical alignment of the logo */
+    margin-right: 5px;
+  }
+  & h2 {
+    float: left;
+    margin-top: 30px;
+    color: #3b3e49;
+  }
 }
 
-.logo img {
-  float: left;
-  height: 50px;
-  margin-top: 15px; /* Optical alignment of the logo */
-  margin-right: 5px;
-}
-
-.logo h2 {
-  float: left;
-  margin-top: 30px;
-  color: #3b3e49;
-}
-
-nav {
+.inner nav {
   float: right;
-  height: 100%;
-}
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 22px;
+  & span {
+    margin-top: 20px;
+    margin-right: 30px;
+  }
 
-li {
-  display: table;
-  height: 100%;
-  float: left;
-  margin-right: 30px;
-}
-
-li:last-of-type {
-  margin-right: 0;
-}
-
-span {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.button {
-  display: block;
-  background-color: #b07219; /* HEX color of the button */
-  color: #FFF;
-  
-  margin-bottom: 3px;
-  padding: 8px 15px;
-  border-radius: 6px;
-}
-
-.button:hover {
-  filter: brightness(1.05);
-}
-
-#github {
-  height: 18px;
-  padding-left: 5px;
+  .button {
+    float: left;
+    background-color: #b07219;
+    margin-top: 2px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: block;
+    > p {
+      float: left;
+      margin: 0;
+      color: #FFF;
+      padding-top: 3px;
+    }
+    > img {
+      float: right;
+      width: 20px;
+      margin-top: 0;
+      padding-left: 5px;
+    }
+    &:hover {
+      filter: brightness(1.05);
+    }
+  }
 }
 </style>
