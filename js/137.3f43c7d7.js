@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunklrc_docs"]=self["webpackChunklrc_docs"]||[]).push([[137],{7137:function(e,n,r){r.r(n),r.d(n,{default:function(){return i}});var u=r(3396);const c=(0,u._)("h1",null,"FAQ page under development... Give me some time : (",-1),t=[c];function l(e,n){return(0,u.wg)(),(0,u.iD)("div",null,t)}var s=r(89);const o={},d=(0,s.Z)(o,[["render",l]]);var i=d}}]);
-//# sourceMappingURL=137.3f43c7d7.js.map
