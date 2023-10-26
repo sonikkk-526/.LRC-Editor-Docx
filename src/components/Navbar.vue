@@ -34,7 +34,7 @@ export default {
 <style scoped>
 * {
   margin-top: 5px;
-  color: #101010;
+  color: #636363;
   text-decoration: none;
 }
 
@@ -73,6 +73,7 @@ header {
   & span {
     margin-top: 20px;
     margin-right: 30px;
+    font-weight: bold;
   }
 
   .button {

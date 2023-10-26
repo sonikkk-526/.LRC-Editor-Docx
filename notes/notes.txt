@@ -3,23 +3,23 @@ To-fix list:
 1. scoped import css also affected FAQ pages 
     - after loading featureview, then it affects global css
 
-2a. Close label child baseed on latest children state*
+2a. Close label child based on latest children state*
 
 2b. Split label and dropdown into two buttons
     - such that the page could change while not having the child state change.
 
-3. content-container could reference blog style, center.
+3. content-container could reference blog style, center. ✅
     - padding left and right, while setting the min-width.
 
 4. Dark mode if possible
 
 To-do list:
-1. index page should breif #about this program, #install and uninstall instructions, #licensing.
+1. index page should brief #about this program, #install and uninstall instructions, #licensing.
     - feature/gettingstart should remove badges.
 
 *2. "Lyrics Editor feature page" content should belong to index.
 
-<-----------------Page Descriptionn Notes---------------->
+<-----------------Page Description Notes---------------->
 download page notes:
 ok. this is the most important thing I would like to bring up, but due to the limitation of the markdown file I used before, its hard to achieve.
 
@@ -37,4 +37,4 @@ need to reach out to more people about this program
 
 2. consider using v-model or v-bind for images ✅
 
-3. small menu needs more left location, as margin is setted to zero ✅
+3. small menu needs more left location, as margin is set to zero ✅

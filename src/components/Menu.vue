@@ -10,7 +10,7 @@
       :smallMenu="smallMenu"
       :route="item.route"
     />
-    <i @click="clickSmallMenu()" class="material-icons">menu</i>
+    <i @click="this.clickSmallMenu" class="material-icons">menu</i>
   </div>
 </template>
 
@@ -93,7 +93,7 @@ export default {
     ]
   }),
   methods: {
-    clickSmallMenu() {
+    clickSmallMenu: function() {
       this.smallMenu = !this.smallMenu;
       this.$emit('smallMenuState', this.smallMenu);
     }
@@ -108,7 +108,7 @@ export default {
 .menu {
   /* menu div/display style */
   height: 100vh;
-  width: 250px;
+  width: 245px;
   border-right: 1px solid #ececec;
   transition: all 0.3s ease;
   overflow: auto;
@@ -116,8 +116,8 @@ export default {
   z-index: 2;
   &.small-menu {
     overflow: inherit;
-    width: 60px;
-    padding-top: 45px;
+    width: 70px;
+    padding-top: 40px;
     &.small-menu i {
       left: 20px;
     }

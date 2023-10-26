@@ -1,5 +1,7 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
-  publicPath: "/lrc-editor-docs/",
+  publicPath: process.env.NODE_ENV === 'production'
+  ? '/lrc-editor-docs/'
+  : '/',
   transpileDependencies: true
 })

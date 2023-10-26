@@ -1,42 +1,29 @@
 <template>
-  <Menu @small-menu-state="(state) => this.smallMenu = state"/>
+  <Menu @small-menu-state="handleSmallMenuState" />
   
-  <div class="content" :class="{ 'small-menu': smallMenu }">
-    <div class="content-container">
+    <div class="content" :class="{ 'small-menu': smallMenu }">
       <RouterView />
     </div>
-  </div>
 </template>
 
 <script setup>
 import Menu from '@/components/Menu';
 </script>
 
-<script>
+<script scoped>
 export default {
+  components: { Menu },
   data: () => ({
     smallMenu: false
   }),
-  components: { Menu }
+  methods: {
+    handleSmallMenuState: function(state) {
+      this.smallMenu = state;
+    }
+  }
 }
 </script>
 
 <style scoped>
 @import "@/assets/styles/FeatureStyle.css";
-
-.content {
-  top: 90px;
-  left: 330px;
-  display: block;
-  position: absolute;
-  max-width: 100%;
-  z-index: 1;
-  transition: all .3s ease;
-  &.small-menu {
-    left: 80px;
-    .content-container {
-      width: 90%;
-    }
-  }
-}
 </style>

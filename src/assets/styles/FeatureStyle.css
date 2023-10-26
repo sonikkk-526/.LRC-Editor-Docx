@@ -1,29 +1,71 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); */
 
-.content-container *:not(h1, b, i, code, q) {
-  font-family: Verdana, Verdana, Geneva, Tahoma, sans-serif;
-  color: #3a3a3a;
-}
-
-.content-container {
+.content {
+  display: block;
+  position: absolute;
   text-wrap: wrap;
-  width: 75%;
+  z-index: 1;
+  top: 90px;
   min-width: 850px;
-  max-width: 1600px;
+  max-width: device-width;
+
+  width: 65%;
+  /* set the distance against leftmost routerview */
+  transform: translateX(315px);
   transition: all .3s ease;
-}
-
-.block-container {
-  display: flex;
-}
-
-.block-container blockquote {
-  min-width: 350px;
-}
-
-.block-container span {
-  padding-left: 5px;
-  font-weight: bold;
+  &.small-menu {
+    /* reduce distance against leftmost to increase .content view width */
+    width: 80%;
+    transform: translateX(100px);
+  }
+  & *:not(h1, b, i, code, q) {
+    font-family: Verdana, Verdana, Geneva, Tahoma, sans-serif;
+    color: #3a3a3a;
+  }
+  & h1 {
+    border-bottom: 2px solid rgba(16, 16, 16, 0.1);
+    padding: 25px 5% 4px 10px;
+    margin: 0 0 13px 0;
+  }
+  & blockquote {
+    margin-left: 1.6em;
+    padding-right: 1.4em;
+  }
+  & blockquote p {
+    padding: 15px;
+    background: #e8e8e8;
+    border-radius: 5px;
+    display: list-item;
+    list-style-position: outside;
+    max-width: 91.5%;
+  }
+  & code {
+    background: #dddddd;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  & q {
+    line-height: 1.6;
+  }
+  & ul li {
+    line-height: 1.6;
+    list-style-type: square;
+  }
+  & iframe {
+    width: 910px;
+    height: 510px;
+    box-shadow: 6px 6px 10px #9e9e9e;
+  }
+  .block-container {
+    display: flex;
+    & blockquote {
+      min-width: 350px;
+    }
+    & span {
+      padding-left: 5px;
+      font-weight: bold;
+    }
+  }
 }
 
 #showcase {
@@ -33,46 +75,4 @@
 
 #english-content {
   line-height: 1.5;
-}
-
-h1 {
-  border-bottom: 2px solid rgba(16, 16, 16, 0.1);
-  display: inline-block;
-  padding: 25px 5% 4px 10px;
-  margin: 0 0 13px 0;
-}
-
-blockquote {
-  margin-left: 1.6em;
-  padding-right: 1.4em;
-}
-
-blockquote p {
-  padding: 15px;
-  background: #e8e8e8;
-  border-radius: 5px;
-  display: list-item;
-  list-style-position: outside;
-  max-width: 91.5%;
-}
-
-code {
-  background: #dddddd;
-  border-radius: 3px;
-  font-size: 16px;
-}
-
-q {
-  line-height: 1.6;
-}
-
-ul li {
-  line-height: 1.6;
-  list-style-type: square;
-}
-
-iframe {
-  width: 910px;
-  height: 510px;
-  box-shadow: 6px 6px 10px #9e9e9e;
 }

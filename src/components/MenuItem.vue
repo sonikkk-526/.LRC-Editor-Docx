@@ -1,44 +1,45 @@
 <template>
   <div class="menu-item" :class="{ opened: expanded }">
-    <RouterLink :to="{name: route}"> <!--path: `/feature/${route}`-->
-      <div
-        class="label"
-        @click="toggleMenu()"
-        :style="{ paddingLeft: depth * 20 + 20 + 'px' }"
-      >
+    <div
+      class="label"
+      :style="{ paddingLeft: depth * 20 + 20 + 'px' }"
+    >
+      <RouterLink :to="{name: route}">
         <div class="left">
+          <!--path: `/feature/${route}`-->
           <i v-if="icon" class="material-icons-outlined">{{ icon }}</i>
-            <span v-if="showLabel">{{ label }}</span>
+          <span v-if="showLabel">{{ label }}</span>
         </div>
-      
-        <div v-if="data" class="right">
-          <i class="expand material-icons" :class="{ opened: expanded }">expand_more</i>
-        </div>
+      </RouterLink>
+
+      <div v-if="data" class="right">
+        <i @click="toggleMenu()" class="expand material-icons" :class="{ opened: expanded }">expand_more</i>
       </div>
-      <div
-        v-show="showChildren"
-        :class="{ 'small-menu': smallMenu }"
-        class="items-container"
-        :style="{ height: containerHeight }"
-        ref="container"
-      >
-      <menu-item
-          :class="{ opened: showChildren }"
-          v-for="(item, index) in data"
-          :key="index"
-          :data="item.children"
-          :label="item.label"
-          :icon="item.icon"
-          :depth="depth + 1"
-          :smallMenu="smallMenu"
-          :route="item.route"
-        />
-      </div>
-    </RouterLink>
+    </div>
+
+    <div
+      v-show="showChildren"
+      :class="{ 'small-menu': smallMenu }"
+      class="items-container"
+      :style="{ height: containerHeight }"
+      ref="container"
+    >
+    <menu-item
+        :class="{ opened: showChildren }"
+        v-for="(item, index) in data"
+        :key="index"
+        :data="item.children"
+        :label="item.label"
+        :icon="item.icon"
+        :depth="depth + 1"
+        :smallMenu="smallMenu"
+        :route="item.route"
+      />
+    </div>
   </div>
 </template>
 
-<script>
+<script scoped>
 export default {
   name: "menu-item",
   data: () => ({
@@ -112,7 +113,6 @@ export default {
 }
 .menu-item .label {
   font-weight: bold;
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -121,40 +121,47 @@ export default {
   height: 50px;
   padding: 0 20px;
   box-sizing: border-box;
-  transition: all 0.3s ease;
-  > div {
+  & div,a {
     display: flex;
     align-items: center;
     gap: 10px;
   }
-  &.small-item {
+  .small-item {
     width: fit-content;
   }
   &:hover {
-    background: #deedff;
+    background: rgba(45, 45, 60, 0.10);
     cursor: pointer;
+    transition: all 0.3s ease;
   }
+  .right:hover {
+    background: rgba(45, 45, 60, 0.15);
+    transition: all 0.1s ease;
+  }
+
 }
 
 .menu-item .opened .label {
   font-weight: normal;
 }
 
-/* Labels */
+/* icons */
 i {
   font-size: 20px;
   color: #6e6e6e;
   transition: all 0.3s ease;
+  /* dropdown icon (regardless of state) */
   &.expand {
     font-size: 16px;
     color: #cacaca;
+    padding-left: 4px;
     &.opened {
       transform: rotate(180deg);
     }
   }
 }
 
-/* Small Labels */
+/* small labels */
 .items-container {
   width: 100%;
   left: calc(100% + 6px);
