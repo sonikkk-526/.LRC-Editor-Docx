@@ -119,18 +119,17 @@ export default {
     width: 70px;
     padding-top: 40px;
     &.small-menu i {
-      left: 20px;
+      left: 21px;
     }
   }
 }
 
+/* hamburger menu button */
 i {
-  /* Menu open or close button */
   display: block;
   position: absolute;
-  top: 113px;
+  top: 123px;
   left: 265px;
-  font-size: 20px;
   user-select: none;
   cursor: pointer;
   transition: all 0.3s ease;

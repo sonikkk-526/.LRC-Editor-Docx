@@ -12,8 +12,8 @@
         </div>
       </RouterLink>
 
-      <div v-if="data" class="right">
-        <i @click="toggleMenu()" class="expand material-icons" :class="{ opened: expanded }">expand_more</i>
+      <div @click="toggleMenu()" v-if="data" class="right">
+        <i class="expand material-icons" :class="{ opened: expanded }">expand_more</i>
       </div>
     </div>
 
@@ -131,14 +131,24 @@ export default {
   }
   &:hover {
     background: rgba(45, 45, 60, 0.10);
-    cursor: pointer;
     transition: all 0.3s ease;
   }
-  .right:hover {
-    background: rgba(45, 45, 60, 0.15);
-    transition: all 0.1s ease;
+  .left:hover,.right:hover {
+    cursor: pointer;
   }
-
+  /* right class hover animation for dropdown arrow icon */
+  .right {
+    width: 23px;
+    &:hover {
+      border-radius: 6px;
+      background: rgba(34, 34, 46, 0.15);
+      transition: all 0.2s ease;
+      & i {
+        color: #6e6e6e;
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 .menu-item .opened .label {
@@ -149,14 +159,14 @@ export default {
 i {
   font-size: 20px;
   color: #6e6e6e;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   /* dropdown icon (regardless of state) */
   &.expand {
     font-size: 16px;
     color: #cacaca;
     padding-left: 4px;
     &.opened {
-      transform: rotate(180deg);
+      transform: rotateX(180deg);
     }
   }
 }

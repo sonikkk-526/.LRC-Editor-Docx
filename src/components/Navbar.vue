@@ -39,7 +39,6 @@ export default {
 }
 
 header {
-  height: 95px;
   border-bottom: 1px solid #ececec;
   > .inner {
     width: 75%; /* This is the inner width of the content inside of your header (80%, etc) */
@@ -50,10 +49,11 @@ header {
 }
 
 .inner .label {
+  height: 95px;
   display: inline-block;
   & img {
     float: left;
-    height: 50px;
+    height: 50%;
     margin-top: 15px; /* Optical alignment of the logo */
     margin-right: 5px;
   }

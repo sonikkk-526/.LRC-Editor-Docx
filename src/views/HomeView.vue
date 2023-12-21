@@ -1,4 +1,5 @@
 <template>
+  <div>
   <section class="home-content">
     <div class="headline-icon">
       <img src="../assets/img/editor_icon.png" alt="Lyrics Editor for .LRC Logo">
@@ -22,7 +23,7 @@
     <h1 class="text-color">The Only Tool You Ever Need<br>For Your .LRC Files.</h1>
 
     <h1 class="description">
-      Create. Editing. Adjust. Manage. All-in-one.
+      Create. Edit. Adjust. Manage. All-in-one.
     </h1>
   </section>
 
@@ -32,10 +33,12 @@
       Copyright © 2022-2023 sonikkk-526.
     </p>
   </section>
+</div>
 </template>
 
 <style scoped>
 * {
+  position: relative;
   font-family: "Inter var experimental", "Inter var", Inter, -apple-system, "Helvetica Neue", sans-serif;
 }
 .home-content {
@@ -69,8 +72,8 @@
   }
 }
 .author {
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  margin-top: 28vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.05);
   * {

@@ -1,13 +1,12 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); */
 
-.content {
+.content-container {
   display: block;
   position: absolute;
   text-wrap: wrap;
   z-index: 1;
-  top: 90px;
-  min-width: 850px;
-  max-width: device-width;
+  top: 100px;
+  min-width: device-width;
 
   width: 65%;
   /* set the distance against leftmost routerview */
@@ -17,6 +16,7 @@
     /* reduce distance against leftmost to increase .content view width */
     width: 80%;
     transform: translateX(100px);
+    top: 95px;
   }
   & *:not(h1, b, i, code, q) {
     font-family: Verdana, Verdana, Geneva, Tahoma, sans-serif;

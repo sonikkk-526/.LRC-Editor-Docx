@@ -15,7 +15,7 @@ import NavBar from '@/components/Navbar.vue';
 <style>
 /* @import 'https://fonts.googleapis.com/css?family=Montserrat:400,800%22'; */
 
-html, body {
+html,body {
   margin: 0;
 }
 

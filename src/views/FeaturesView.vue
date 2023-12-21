@@ -1,9 +1,10 @@
 <template>
-  <Menu @small-menu-state="handleSmallMenuState" />
-  
-    <div class="content" :class="{ 'small-menu': smallMenu }">
+  <div class="content">
+    <Menu @small-menu-state="handleSmallMenuState" />
+    <div class="content-container" :class="{ 'small-menu': smallMenu }">
       <RouterView />
     </div>
+  </div>
 </template>
 
 <script setup>
